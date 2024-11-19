@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/bg\ 2.png);
+    background-position: center;
+    background-size: cover;
+    padding: 0 8%;
+    position: relative;
+}
+.logo{
+    font-size: 25px;
+    padding: 20px 0;
+    cursor: pointer;
+    color: #fff;
+}
+.content{
+    top: 50%;
+    position: absolute;
+    transform: translateY(-50%);
+    color: #fff;
+}
+.content h1{
+    font-size: 3.5rem;
+    font-weight: bolder;
+}
+.content span{
+    color: #ff3753;
+}
+.content button{
+    background: linear-gradient(#ff3753, #5f141f);
+    border: 0;
+    outline: 0;
+    padding: 12px 25px;
+    color: #fff;
+    font-weight: bolder;
+    font-size: 1.2rem;
+    margin-top: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 0 10px #440b14;
+    display: flex;
+    align-items: center;
+}
+.content button img{
+    width: 20px;
+    margin-left: 5px;
+}
+.launching-time{
+    display: flex;
+}
+.launching-time div{
+     flex-basis: 100px;
+}
+.launching-time div p{
+     font-size: 3rem;
+     margin-top: 14px;
+}
+
+
+.rocket{
+    width: 200px;
+    position: absolute;
+    right: 10%;
+    bottom: 0;
+    animation: rocket 5s linear infinite;
+}
+@keyframes rocket {
+    0%{
+        bottom: 0;
+        opacity: 0;
+    }
+    100%{
+        bottom: 105%;
+        opacity: 1;
+    }
+}
